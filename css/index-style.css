@@ -1,0 +1,213 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav-bar{
+    position: fixed;
+    top: 20%;
+    right: 3%;
+    z-index: 2;
+    width: 110px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar ul{
+    list-style: none;
+    text-align: center;
+}
+.nav-bar a{
+    padding: 25px 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s all;
+}
+.nav-bar a:hover{
+    color: #4CB5D8;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-size: 100% 100%;
+}
+#home .homeLayer{
+    background-color: rgba(0, 150, 200, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeLayer .layerBody{
+    color: white;
+    text-align: center;
+}
+.homeLayer .layerBody h1{
+    font-size: 4rem;
+}
+.homeLayer .layerBody hr{
+    background-color: white;
+    height: 3px;
+}
+.homeLayer .layerBody p{
+    font-weight: 500;
+    font-size: 1.5rem;
+} 
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+#profile{
+    width: 100%;
+}
+#profile hr , #experince hr , #abilities hr , #projects hr{
+    background-color: #4CB5D8;
+    height: 1.2px;
+    width: 90%;
+}
+.header{
+    text-align: center;
+    color: #4CB5D8;
+}
+h6{
+    color: #4CB5D8;
+}
+#profile .pink{
+    background-color: #5F9EA0;
+    padding: 5px;
+    font-weight: 500;
+}
+.myColor{
+    color: #4CB5D8;
+}
+.goldenBtn{
+    background-color: greenyellow;
+    border-radius: 10rem;
+    padding: 7px;
+    color: black;
+    font-weight: 500;
+}
+/**********************************************************************************************************/
+/**********************************************************************************************************/
+#experince{
+    background-color: #F3EFE0;
+}
+.clr{
+    clear: both;
+}
+.anyRowInThisCol .row{
+    display: flex;
+    align-items: center;
+    transition: 0.3s all;
+    padding: 15px;
+}
+.anyRowInThisCol .row:hover{
+    /* background-color: #C8C8C8; */
+    background-color: rgb(144, 196, 248);
+}
+.hoveredStar{
+    transition: 0.3s all;
+}
+.anyRowInThisCol .row:hover .hoveredStar{
+    color: rgb(11, 103, 194);
+}
+.value{
+    transition: 0.3s all;
+}
+.anyRowInThisCol .row:hover .value{
+    transform: scale(1.15);
+}
+/*****************************************************************************************/
+/*****************************************************************************************/
+#projects{
+    background-color: #F3EFE0;
+}
+.projectView , .projectView1{
+    height: 300px;
+    transition: 0.5s all;
+    overflow: hidden;
+    position: relative;
+}
+.projectView img ,.projectView1 img{
+    height: 100%;
+    width: 100%;
+}
+.projectView:hover{
+    transform: translateX(15px) translateY(15px);
+}
+.projectView1:hover{
+    transform: translateX(-15px) translateY(15px);
+}
+.projectView .projectLayer , .projectView1 .projectLayer {
+    background-color: rgba(144, 196, 248, 0.5);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s all;
+}
+.projectView:hover .projectLayer ,.projectView1:hover .projectLayer{
+    opacity: 1;
+}
+.linkto{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #4CB5D8;
+    padding: 12px;
+}
+.linkto a{
+    text-decoration: none;
+}
+.projectLayer .layerBody {
+    color: white;
+    
+}
+.projectLayer .layerBody p , .projectLayer .layerBody b{
+    position: relative;
+    top: 0;
+    left: 100%;
+    transition: 0.7s all;
+}
+.projectView:hover p ,.projectView:hover b,.projectView1:hover p ,.projectView1:hover b{
+    left: 0;
+}
+/******************************************************************************************/
+/******************************************************************************************/
+#contacts{
+    background-color: #434242;
+}
+#contacts hr{
+    background-color: white;
+    height: 1.5px;
+}
+.Logos a{
+    text-decoration: none;
+    color: black;
+}
+.Logos a:hover i {
+    color: #4CB5D8;
+    background-color: white;
+}
+.Logos a:hover b {
+    color: #4CB5D8;
+}
+.Logos a i{
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #4CB5D8;
+    padding: 10px 20px;
+    width: 65px;
+    border-radius: 10px;
+    transition: 0.5s all;
+}
